@@ -1,0 +1,17 @@
+body {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 18pt;
+}
+table {
+	width: 100%;
+	border: 1px solid blue;
+	border-collapse: collapse;
+	}
+thead {
+	font-size: 80%;
+	font-weight: bold;
+}
+td {
+	border: 1px solid blue;
+	padding: 5px;
+}
