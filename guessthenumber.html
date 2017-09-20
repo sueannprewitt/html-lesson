@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang "en">
+<head>
+	<title></title>
+	<script lang="javascript">
+		var theNumber = 0;
+		function getRandomNumber() {
+				theNumber = Math.floor(Math.random() * 100);  //this variable is going to hold the random number
+
+		}
+		function makeGuess() {
+				var inputCtrl = document.getElementById("theGuess");
+				var theirGuess = inputCtrl.value;
+				var spanCtrl = document.getElementById("message");
+				if(theirGuess < theNumber) {
+					spanCtrl.textContent = "Too low!";
+				} else if(theirGuess > theNumber) {
+					spanCtrl.textContent = "Too high!";
+				} else {
+					spanCtrl.textContent = "Correct!";
+				}
+		}
+	</script>
+</head>
+<body>
+		<button onclick="getRandomNumber()">Get a random number</button>
+		<p>
+			<input id="theGuess" type="text">
+			<button onclick="makeGuess()">Your Guess</button>
+			<span id="message"></span>
+		</p>
+</body>
+</html>
