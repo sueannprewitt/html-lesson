@@ -13,5 +13,5 @@ thead {
 }
 td {
 	border: 1px solid blue;
-	padding: 5px;
+	padding: 5px 5px 5px 10px;
 }
