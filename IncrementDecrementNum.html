@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<script lang="javascript">
+	//You don't want to define the number inside the functions because they both must share access to the number.
+	var num = 0;
+
+
+	function decrement(){
+		num--; //decrements the num variable
+		display(); //call the display function
+	}
+	function increment(){
+		num++; //increments the num variable
+		display(); //call the display function
+		}
+
+	//When setting the value of an input box, you must set the *.value* property of the control.
+		function display() {  //take the value that's in num and put it in the input box
+			var inputCtrl = document.getElementById("num");//get reference to the input box
+			inputCtrl.style.color = "purple";
+			inputCtrl.value = num; //set the current value
+		}
+
+	</script>
+
+</head>
+<body>
+
+
+<button onclick="decrement()">-</button>  
+<input id="num" type="text" style="text-align: center; color: red;" value= "0">
+<button onclick="increment()">+</button>
+
+</body>
+</html>
